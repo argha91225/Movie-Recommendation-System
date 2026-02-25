@@ -4,73 +4,75 @@ An advanced movie recommendation and prediction system that moves beyond traditi
 
 🚀 Project Overview
 
-Traditional K-Nearest Neighbors (KNN) struggles with scalability, sparsity, and capturing complex user preferences.
+Traditional KNN struggles with scalability, sparse datasets, and capturing complex user preferences.
 
-This project explores smarter alternatives by combining:
+This project explores advanced alternatives by combining:
 
 🎯 Content-Based Filtering
 
 👥 Collaborative Filtering (User & Item-Based)
 
-📊 Clustering Techniques (User/Item Segmentation)
+📊 Clustering Techniques
 
 🔢 Matrix Factorization (SVD)
 
-🧠 Deep Learning & Neural Networks
+🧠 Neural Networks
 
-The result is a hybrid recommendation engine capable of adapting to user behavior and improving prediction accuracy over time.
+The system uses a hybrid architecture to improve personalization, scalability, and prediction accuracy.
+
+📂 Dataset Access
+
+Due to large file sizes, the complete datasets are hosted externally.
+
+🔗 Full Dataset (Google Drive)
+
+Access the full datasets here:
+
+👉 https://drive.google.com/drive/folders/1z4OrOXG14J8yS6jD-fxSIfqubJNP1063?usp=sharing
+
+Steps to Use the Dataset:
+
+Open the Google Drive link above.
+
+Download all dataset files to your local machine.
+
+Create a folder named data inside the project root directory.
+
+Place all downloaded dataset files inside the data folder.
+
+Run the project normally after placing the files in the correct directory.
+
+The expected project structure should contain a main project folder with subfolders such as data, notebooks, src, and the main application files.
+
 
 🏗️ System Architecture
+1️⃣ Data Processing
 
-Data Collection
+Cleaning and preprocessing
 
-Movie metadata (genres, cast, keywords, etc.)
+Handling missing values
 
-User ratings
+Feature extraction (TF-IDF, metadata encoding)
 
-Reviews & behavioral data
+2️⃣ Modeling Approaches
 
-Feature Engineering
-
-TF-IDF for textual features
-
-User-item interaction matrices
-
-Latent factor extraction via SVD
-
-Modeling Approaches
-
-Content similarity models
+Content-based similarity models
 
 Collaborative filtering
 
 Clustering for segmentation
 
+SVD for latent factor extraction
+
 Neural network-based prediction
 
-Hybrid Integration
+3️⃣ Hybrid Recommendation Engine
 
 Combines multiple models
 
-Handles cold-start problems
+Addresses cold-start problems
 
-Improves personalization & diversity
-
-📂 Dataset
-
-Uses real-world datasets such as:
-
-MovieLens Dataset
-
-Movie metadata (TMDB-style structured data)
-
-📈 Key Features
-
-✔ Scalable beyond large sparse datasets
-✔ Handles cold-start scenarios
-✔ Learns latent user preferences
-✔ Integrates deep learning for nonlinear pattern recognition
-✔ Supports hybrid recommendation strategies
+Improves diversity and personalization
 
 🛠️ Tech Stack
 
@@ -80,11 +82,11 @@ Pandas & NumPy
 
 Scikit-learn
 
-Surprise (for SVD)
+Surprise (SVD)
 
 TensorFlow / PyTorch
 
-NLP techniques (TF-IDF)
+NLP (TF-IDF)
 
 📊 Evaluation Metrics
 
@@ -96,30 +98,22 @@ Precision@K
 
 Recall@K
 
-Recommendation diversity
+Diversity Score
 
-🔥 Results
+🔥 Key Achievements
 
-Improved prediction accuracy compared to KNN
-
-Higher user engagement potential
-
-Better personalization & content discovery
+✔ Scalable beyond sparse datasets
+✔ Improved accuracy over traditional KNN
+✔ Hybrid intelligent architecture
+✔ Real-world dataset implementation
+✔ Recruiter-friendly lightweight version included
 
 💡 Future Improvements
 
-Real-time recommendation API
+Real-time API deployment (Flask/FastAPI)
 
-Deployment using Flask/FastAPI
+Transformer-based sentiment analysis
 
-Transformer-based review sentiment analysis
+Reinforcement learning-based adaptive recommendations
 
-Reinforcement learning for adaptive recommendations
-
-🤝 Contributing
-
-Contributions, suggestions, and improvements are welcome!
-
-📜 License
-
-This project is licensed under the MIT License.
+Cloud deployment
